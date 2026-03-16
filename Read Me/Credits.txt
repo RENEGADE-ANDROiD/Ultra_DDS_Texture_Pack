@@ -1,0 +1,3 @@
+1) DHTP - https://github.com/KuriKai/DHTP
+2) PBR materials by Stealth Frag - https://www.doomworld.com/forum/topic/130773-doom-pbr-materials-pack-for-episode-one-available-resolutions-256-512-and-1k/
+3) Texture Lights - https://forum.zdoom.org/viewtopic.php?style=19&t=64481

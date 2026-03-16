@@ -1,0 +1,239 @@
+#library "TEST" // Name of the library
+#include "zcommon.acs"
+
+
+
+int PlayerTID = 0;
+
+
+
+//------------------------------------------------------------------------------------------------
+//PLAYER
+
+script "ChangePlayerTID" enter
+{
+
+//Delay(1);
+PlayerTID = UniqueTID();
+Thing_ChangeTID(0, PlayerTID);
+
+}//script "ChangePlayerTID" enter
+
+
+
+script "FaceAngleAndPitchToPlayer" (int TicsCount)
+{
+
+SetResultValue(1);
+
+for (int I = 1; I <= TicsCount; I++)
+{
+
+ int distx = GetActorX(PlayerTID)-GetActorX(0);
+ int disty = GetActorY(PlayerTID)-GetActorY(0);
+ int distz = GetActorZ(PlayerTID)-GetActorZ(0);
+
+ ChangeActorAngle(0 , VectorAngle(distx, disty), true);
+ ChangeActorPitch(0 , VectorAngle(VectorLength(distx, disty), -distz), true); 
+
+ Delay(1);
+
+}//for (int I = 1; I <= TicsCount; I++)
+
+//SetResultValue(1);
+
+}//script "FaceAngleAndPitchToPlayer" (void)
+
+//------------------------------------------------------------------------------------------------
+//CHANGE SCALE
+
+script "ChangeScale" (int SizeMin, int SizeMax)
+{
+
+//printbold(s:" Xold = ", d:GetActorProperty(0, APROP_ScaleX));
+//printbold(s:" Yold = ", d:GetActorProperty(0, APROP_ScaleY));
+
+
+   SetActorProperty(0, APROP_ScaleX, random(SizeMin, SizeMax) * 0.1 );
+   SetActorProperty(0, APROP_ScaleY, GetActorProperty(0, APROP_ScaleX) );
+
+//printbold(s:" Xnew = ", d:GetActorProperty(0, APROP_ScaleX));
+//printbold(s:" Ynew = ", d:GetActorProperty(0, APROP_ScaleY));
+
+SetResultValue(1);
+
+
+}//script "ChangeScale" (void)
+
+//------------------------------------------------------------------------------------------------
+//GLITTER
+
+
+script "SpawnItemGlitter" (int Color)
+{
+
+int I;
+
+//FOR SHADOW SPHERE
+
+int Glitter_X1;
+int Glitter_X2;
+int Glitter_Y1;
+int Glitter_Y2;
+int Radius = 30;
+//int Step = 5;
+int Step = 3;
+int Glitter_Length = 5;
+
+
+  Glitter_X1 = -1*Radius;
+  Glitter_X2 = Radius;
+
+
+//FOR SHADOW SPHERE
+
+
+int GlitterStyle= random(1,2);
+
+
+  int Glitter_tid = UniqueTID();
+
+//  printbold(s:" Glitter_tid = ", d:Glitter_tid);
+
+  while (true)
+  {
+
+    if (GetUserVariable(0, "User_Visible") == 1)
+    {
+
+
+      //BLACK
+      if (Color == 1)
+      {
+
+       Glitter_X1 = Glitter_X1 + Step;
+       if (Glitter_X1 > Radius) { Glitter_X1 = -1*Radius; } 
+       Glitter_Y1 = sqrt(Radius*Radius - Glitter_X1*Glitter_X1);
+
+       Glitter_X2 = Glitter_X2 - Step;
+       if (Glitter_X2 < -1*Radius) { Glitter_X2 = Radius; } 
+       Glitter_Y2 = -1 * sqrt(Radius*Radius - Glitter_X2*Glitter_X2);
+
+
+       //printbold(s:" X = ", d:Glitter_X, s:" Y = ", d:Glitter_Y);
+
+       SpawnForced("TeleGlitterGeneratorShadowsphere", GetActorX(0) + (Glitter_X1 << 16), GetActorY(0) + (Glitter_Y1 << 16), GetActorZ(0), Glitter_tid, 0);
+       SpawnForced("TeleGlitterGeneratorShadowsphere", GetActorX(0) + (Glitter_X2 << 16), GetActorY(0) + (Glitter_Y2 << 16), GetActorZ(0), Glitter_tid, 0);
+
+       Delay(3);
+
+      }//      if (Color == 1)  then
+
+      //YELLOW
+      else if (Color == 2) 
+      {
+        SpawnForced("TeleGlitterGeneratorRing", GetActorX(0), GetActorY(0), GetActorZ(0), Glitter_tid, 0); 
+        Delay(3);
+      }//if (Color == 2) 
+
+      //RED
+      else if (Color == 3)
+      {
+
+        if (GlitterStyle == 1) 
+             { SpawnForced("TeleGlitterGeneratorUrn1", GetActorX(0), GetActorY(0), GetActorZ(0), Glitter_tid, 0); }
+          else { SpawnForced("TeleGlitterGeneratorUrn2", GetActorX(0), GetActorY(0), GetActorZ(0), Glitter_tid, 0); }
+
+        Delay(3);
+
+      }//      if (Color == 3)  then
+
+      //BLUE
+      else if (Color == 4)
+      {
+
+        if (GlitterStyle == 1) 
+               { SpawnForced("TeleGlitterGeneratorEnergyOrb1", GetActorX(0), GetActorY(0), GetActorZ(0), Glitter_tid, 0); }
+          else { SpawnForced("TeleGlitterGeneratorEnergyOrb2", GetActorX(0), GetActorY(0), GetActorZ(0), Glitter_tid, 0); }
+
+        Delay(3);
+
+      }//      if (Color == 4)  then
+
+      //FIRE HERETIC
+      else if (Color == 5)
+      {
+
+        SpawnForced("TorchFireHeretic_Generator", GetActorX(0), GetActorY(0), GetActorZ(0), Glitter_tid, 0); 
+
+        //Delay(3);
+
+      }//      if (Color == 5)  then
+
+      //FIRE HEXEN
+      else if (Color == 6)
+      {
+
+        SpawnForced("TorchFireHexen_Generator", GetActorX(0), GetActorY(0), GetActorZ(0), Glitter_tid, 0); 
+
+        //Delay(3);
+
+      }//      if (Color == 6)  then
+
+     //FIRE HD
+      else if (Color == 7)
+      {
+
+        SpawnForced("TorchFireHD_Generator", GetActorX(0), GetActorY(0), GetActorZ(0), Glitter_tid, 0); 
+
+        //Delay(3);
+
+      }//      if (Color == 7)  then
+
+
+
+
+
+
+
+/*
+        else
+        {SpawnForced("TeleGlitterGenerator6", GetActorX(0), GetActorY(0), GetActorZ(0), Glitter_tid, 0);}
+*/
+
+      // GetActorX(0), GetActorY(0), GetActorZ(0) = координаты актора который вызвал скрипт
+      // Все действия с актором Б делать через actor_b_tid
+
+
+
+    }//if (GetUserVariable(0, "User_Visible") == 1) then
+
+/*
+    else
+    {
+      Delay(ParticlePerformanceDelay);
+    }//if (GetUserVariable(0, "User_Visible") == 1) else
+*/
+
+
+
+
+
+    if ( GetUserVariable(0, "User_GlitterIsSpawned") == 3)
+      {
+       Thing_Remove(Glitter_tid);
+       SetResultValue(1);
+       terminate;
+      }//      if ( GetUserVariable(0, "User_GlitterIsSpawned") == 3)
+
+    Delay(1);
+//    Delay(4);
+  }
+
+SetResultValue(1);
+
+}//script "SpawnItemGlitter" (int Color)
+
+
+
+//------------------------------------------------------------------------------------------------
