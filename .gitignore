@@ -1,0 +1,6 @@
+*.py
+*.pyw
+*.ps1
+*.log
+*.tmp
+cursor_audit_*.md
