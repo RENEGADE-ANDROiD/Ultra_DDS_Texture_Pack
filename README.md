@@ -6,6 +6,8 @@ Most heavy textures needed downscaled for best performance as well, minus the de
 Screenshots courtesy of Doc.  Tasteful
  CRT scanlines are not included.
 
+https://www.moddb.com/mods/dds-texturespbr-plus
+
 ![Demo](https://github.com/user-attachments/assets/0f6fad5a-d67c-4f87-afc8-29dadbf83f44)
 <img width="968" height="600" alt="uzdoom_2026-03-29_16-38-59_147" src="https://github.com/user-attachments/assets/2d799e07-e5cb-4454-a1a3-66e3277cf5b4" />
 <img width="968" height="600" alt="uzdoom_2026-03-29_16-36-59_369" src="https://github.com/user-attachments/assets/c24aebd4-da4e-4037-a874-07707c98a6e3" />
