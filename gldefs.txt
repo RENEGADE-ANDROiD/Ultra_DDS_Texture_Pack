@@ -1,4 +1,4 @@
-//================== Glows ===========================
+﻿//================== Glows ===========================
 
 Glow
 {
@@ -10,19 +10,6 @@ Glow
 	Texture "NUKAGE1", "104010", 32
 	Texture "NUKAGE2", "104010", 32
 	Texture "NUKAGE3", "104010", 32
-	Texture "NUKAGE4", "104010", 32
-	Texture "NUKAGE5", "104010", 32
-	Texture "NUKAGE6", "104010", 32
-	Texture "NUKAGE7", "104010", 32
-	Texture "NUKAGE8", "104010", 32
-	Texture "NUKAGE9", "104010", 32
-	Texture "NUKAGE10", "104010", 32
-	Texture "NUKAGE11", "104010", 32
-	Texture "NUKAGE12", "104010", 32
-	Texture "NUKAGE13", "104010", 32
-	Texture "NUKAGE14", "104010", 32
-	Texture "NUKAGE15", "104010", 32
-	Texture "NUKAGE16", "104010", 32
 	Texture "LAVA1", "FF8000", 32
 	Texture "LAVA2", "C0C000", 24
 	Texture "LAVA3", "FF8000", 40
@@ -68,9 +55,7 @@ Glow
 
 //=================== PBR Materials ======================
 
-
 Shader "shaders/parallax2.fp"
-
 
 material Texture "tekwall4"
 {
@@ -158,7 +143,6 @@ roughness "materials/roughness/auto/dem1_1.dds"
 ao "materials/ao/auto/ao_blank2.dds"
 }
 
-
 material Flat "dem1_2"
 {
 normal "materials/normalmaps/auto/dem1_2.dds"
@@ -182,7 +166,6 @@ metallic "materials/metallic/auto/floor7_1.dds"
 roughness "materials/roughness/auto/dem1_4.dds"
 ao "materials/ao/auto/ao_blank2.dds"
 }
-
 
 material Flat "flat2"
 {
@@ -1070,7 +1053,6 @@ ao "materials/ao/auto/ao_blank2.dds"
 metallic "materials/metallic/auto/brown1.dds"
 }
 
-
 material Texture "brnsmalc"
 {
 normal "materials/normalmaps/auto/brnsmalc.dds"
@@ -1291,395 +1273,6 @@ roughness "materials/roughness/auto/flat14.dds"
 ao "materials/ao/auto/flat14.dds"
 }
 
-material Texture "nukage1"
-{
-normal "materials/normalmaps/auto/rnukage_n1.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage2"
-{
-normal "materials/normalmaps/auto/rnukage_n2.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage3"
-{
-normal "materials/normalmaps/auto/rnukage_n3.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage4"
-{
-normal "materials/normalmaps/auto/rnukage_n4.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage5"
-{
-normal "materials/normalmaps/auto/rnukage_n5.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage6"
-{
-normal "materials/normalmaps/auto/rnukage_n6.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage7"
-{
-normal "materials/normalmaps/auto/rnukage_n7.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage8"
-{
-normal "materials/normalmaps/auto/rnukage_n8.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage9"
-{
-normal "materials/normalmaps/auto/rnukage_n9.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage10"
-{
-normal "materials/normalmaps/auto/rnukage_n10.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage11"
-{
-normal "materials/normalmaps/auto/rnukage_n11.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage12"
-{
-normal "materials/normalmaps/auto/rnukage_n12.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage13"
-{
-normal "materials/normalmaps/auto/rnukage_n13.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage14"
-{
-normal "materials/normalmaps/auto/rnukage_n14.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage15"
-{
-normal "materials/normalmaps/auto/rnukage_n15.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "nukage16"
-{
-normal "materials/normalmaps/auto/rnukage_n16.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-
-
-
-material Texture "fwater1"
-{
-normal "materials/normalmaps/auto/rnukage_n1.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater2"
-{
-normal "materials/normalmaps/auto/rnukage_n2.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater3"
-{
-normal "materials/normalmaps/auto/rnukage_n3.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater4"
-{
-normal "materials/normalmaps/auto/rnukage_n4.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater5"
-{
-normal "materials/normalmaps/auto/rnukage_n5.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater6"
-{
-normal "materials/normalmaps/auto/rnukage_n6.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater7"
-{
-normal "materials/normalmaps/auto/rnukage_n7.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater8"
-{
-normal "materials/normalmaps/auto/rnukage_n8.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater9"
-{
-normal "materials/normalmaps/auto/rnukage_n9.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater10"
-{
-normal "materials/normalmaps/auto/rnukage_n10.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater11"
-{
-normal "materials/normalmaps/auto/rnukage_n11.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater12"
-{
-normal "materials/normalmaps/auto/rnukage_n12.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater13"
-{
-normal "materials/normalmaps/auto/rnukage_n13.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater14"
-{
-normal "materials/normalmaps/auto/rnukage_n14.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater15"
-{
-normal "materials/normalmaps/auto/rnukage_n15.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "fwater16"
-{
-normal "materials/normalmaps/auto/rnukage_n16.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-
-material Texture "blood1"
-{
-normal "materials/normalmaps/auto/rnukage_n1.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood2"
-{
-normal "materials/normalmaps/auto/rnukage_n2.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood3"
-{
-normal "materials/normalmaps/auto/rnukage_n3.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood4"
-{
-normal "materials/normalmaps/auto/rnukage_n4.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood5"
-{
-normal "materials/normalmaps/auto/rnukage_n5.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood6"
-{
-normal "materials/normalmaps/auto/rnukage_n6.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood7"
-{
-normal "materials/normalmaps/auto/rnukage_n7.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood8"
-{
-normal "materials/normalmaps/auto/rnukage_n8.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood9"
-{
-normal "materials/normalmaps/auto/rnukage_n9.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood10"
-{
-normal "materials/normalmaps/auto/rnukage_n10.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood11"
-{
-normal "materials/normalmaps/auto/rnukage_n11.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood12"
-{
-normal "materials/normalmaps/auto/rnukage_n12.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood13"
-{
-normal "materials/normalmaps/auto/rnukage_n13.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood14"
-{
-normal "materials/normalmaps/auto/rnukage_n14.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood15"
-{
-normal "materials/normalmaps/auto/rnukage_n15.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-material Texture "blood16"
-{
-normal "materials/normalmaps/auto/rnukage_n16.dds"
-metallic "materials/metallic/auto/rnukage.dds"
-roughness "materials/roughness/auto/rnukage.dds"
-ao "materials/ao/auto/rnukage.dds"
-}
-
-
 material Texture "nuke24"
 {
 normal "materials/normalmaps/auto/nuke24.dds"
@@ -1860,19 +1453,6 @@ normal "materials/normalmaps/auto/tekwall1.dds"
 specular "materials/specular/tekwall1.dds"
 specularlevel 3
 glossiness 10
-}
-
-
-
-Glow
-{
-
-	Walls
-	{
-		rnukage3
-
-	}
-	Texture "rnukage3", 77c94e, 128
 }
 
 material Texture "rrip1"
@@ -2206,7 +1786,6 @@ HardwareShader PostProcess scene
 	Name "CubicCA"
 	Shader "shaders/CubicCA.fp" 330
 }
-
 
 HardwareShader PostProcess scene
 {
